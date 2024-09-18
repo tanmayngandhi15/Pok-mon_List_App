@@ -58,7 +58,7 @@ class PokemonTableViewCell: UITableViewCell {
         
         lbl_pokDesc.text = pokemonData?.description
         
-        iv_pokPhoto.image = .remove
+        iv_pokPhoto.image = UIImage(named: "pokeball")
         
         let currentPhotoPath = pokemonData?.imageUrl
         

@@ -96,6 +96,16 @@ class PokemonViewModel {
         }
     }
     
+    // Function to find Pokémon in Array based on PokemonID
+    func searchPokemon(with id: Int) -> Int? {
+        for i in 0 ..< arrPokemon.count {
+            if arrPokemon[i].id == id {
+                return i
+            }
+        }
+        return nil
+    }
+    
     func loadPokemonImage(for pokemon: Pokemon, completion: @escaping (UIImage?) -> Void) {
         let pokemonId = NSNumber(value: pokemon.id!) // Assuming each Pokémon has a unique `id`
         
