@@ -28,7 +28,7 @@ class PokemonEvolutionCollectionViewCell: UICollectionViewCell {
         lbl_pokemonName.text = pokemonData?.name
 
         vw_cellBg.layer.cornerRadius = 15
-        iv_pokemon.image = .remove
+        iv_pokemon.image = UIImage(named: "pokeball")
         if let id = pokemonData?.id {
 
             pvm?.loadPokemonImage(for: pokemonData!) { [weak self] image in
