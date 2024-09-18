@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         tv_pokemonList.delegate = self
         tv_pokemonList.register(UINib(nibName: "PokemonTableViewCell", bundle: nil), forCellReuseIdentifier: "myCell")
         
-        if let id = backPokID {
+        if let backPokID = backPokID, let id = pvm.searchPokemon(with: backPokID) {
             sb_findPokemon?.isHidden = false
             tv_pokemonList?.isHidden = false
             let indexPath = IndexPath(row: id, section: 0)
