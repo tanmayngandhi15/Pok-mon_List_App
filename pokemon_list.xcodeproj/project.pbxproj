@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A63D8C3E2C75B5B000709B5E /* TypeColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D8C3D2C75B5B000709B5E /* TypeColorViewModel.swift */; };
+		A650FD4E2C746CF2002D3B8C /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650FD4C2C746CF2002D3B8C /* PokemonTableViewCell.swift */; };
+		A650FD4F2C746CF2002D3B8C /* PokemonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A650FD4D2C746CF2002D3B8C /* PokemonTableViewCell.xib */; };
+		A650FD512C74894C002D3B8C /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650FD502C74894C002D3B8C /* PokemonViewModel.swift */; };
+		A650FD532C748BAE002D3B8C /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650FD522C748BAE002D3B8C /* Pokemon.swift */; };
+		A655590A2C73648200AC5515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65559092C73648200AC5515 /* AppDelegate.swift */; };
+		A655590C2C73648200AC5515 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655590B2C73648200AC5515 /* SceneDelegate.swift */; };
+		A655590E2C73648200AC5515 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655590D2C73648200AC5515 /* ViewController.swift */; };
+		A65559112C73648200AC5515 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A65559102C73648200AC5515 /* Base */; };
+		A65559132C73648400AC5515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65559122C73648400AC5515 /* Assets.xcassets */; };
+		A65559162C73648400AC5515 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A65559152C73648400AC5515 /* Base */; };
+		A67540342C7DE10400E11F52 /* PokemonEvolutionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67540332C7DE10400E11F52 /* PokemonEvolutionCollectionViewCell.swift */; };
+		A68C2FFC2C771580002E5B6D /* AudioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C2FFB2C771580002E5B6D /* AudioViewModel.swift */; };
+		A6979B2D2C993FD700387821 /* PokemonEvolutionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6979B2B2C993FD700387821 /* PokemonEvolutionCollectionViewCell.xib */; };
+		A6979B312C995CD700387821 /* UIImageView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6979B302C995CD700387821 /* UIImageView_Extension.swift */; };
+		A6A28B212C9AA6760079A484 /* UIImage_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A28B202C9AA6760079A484 /* UIImage_Extension.swift */; };
+		A6A66F4C2C79DC85001DA9F9 /* PokemonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A66F4B2C79DC85001DA9F9 /* PokemonDetailsViewController.swift */; };
+		A6CBCD142C998B83009B1DBD /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CBCD132C998B83009B1DBD /* String_Extension.swift */; };
+		A6D3E7F22C97FFD70060BE3E /* wartortle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E77F2C97FFD40060BE3E /* wartortle.mp3 */; };
+		A6D3E7F32C97FFD70060BE3E /* machoke.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7802C97FFD40060BE3E /* machoke.mp3 */; };
+		A6D3E7F42C97FFD70060BE3E /* diglett.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7812C97FFD40060BE3E /* diglett.mp3 */; };
+		A6D3E7F52C97FFD70060BE3E /* zubat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7822C97FFD40060BE3E /* zubat.mp3 */; };
+		A6D3E7F62C97FFD70060BE3E /* dodrio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7832C97FFD40060BE3E /* dodrio.mp3 */; };
+		A6D3E7F72C97FFD70060BE3E /* hitmonlee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7842C97FFD40060BE3E /* hitmonlee.mp3 */; };
+		A6D3E7F82C97FFD70060BE3E /* caterpie.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7852C97FFD40060BE3E /* caterpie.mp3 */; };
+		A6D3E7FA2C97FFD70060BE3E /* geodude.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7872C97FFD40060BE3E /* geodude.mp3 */; };
+		A6D3E7FB2C97FFD70060BE3E /* arcanine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7882C97FFD40060BE3E /* arcanine.mp3 */; };
+		A6D3E7FC2C97FFD70060BE3E /* vulpix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7892C97FFD40060BE3E /* vulpix.mp3 */; };
+		A6D3E7FD2C97FFD70060BE3E /* sandshrew.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E78A2C97FFD40060BE3E /* sandshrew.mp3 */; };
+		A6D3E7FE2C97FFD70060BE3E /* raichu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E78B2C97FFD40060BE3E /* raichu.mp3 */; };
+		A6D3E7FF2C97FFD70060BE3E /* spearow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E78C2C97FFD40060BE3E /* spearow.mp3 */; };
+		A6D3E8002C97FFD70060BE3E /* kingler.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E78D2C97FFD40060BE3E /* kingler.mp3 */; };
+		A6D3E8012C97FFD70060BE3E /* weepinbell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E78E2C97FFD40060BE3E /* weepinbell.mp3 */; };
+		A6D3E8022C97FFD70060BE3E /* clefable.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E78F2C97FFD40060BE3E /* clefable.mp3 */; };
+		A6D3E8042C97FFD70060BE3E /* sandslash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7912C97FFD40060BE3E /* sandslash.mp3 */; };
+		A6D3E8052C97FFD70060BE3E /* persian.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7922C97FFD40060BE3E /* persian.mp3 */; };
+		A6D3E8062C97FFD70060BE3E /* hypno.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7932C97FFD40060BE3E /* hypno.mp3 */; };
+		A6D3E8072C97FFD70060BE3E /* machop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7942C97FFD40060BE3E /* machop.mp3 */; };
+		A6D3E8082C97FFD70060BE3E /* nidoqueen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7952C97FFD40060BE3E /* nidoqueen.mp3 */; };
+		A6D3E8092C97FFD70060BE3E /* krabby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7962C97FFD50060BE3E /* krabby.mp3 */; };
+		A6D3E80C2C97FFD70060BE3E /* golbat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7992C97FFD50060BE3E /* golbat.mp3 */; };
+		A6D3E80D2C97FFD70060BE3E /* magneton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E79A2C97FFD50060BE3E /* magneton.mp3 */; };
+		A6D3E80E2C97FFD70060BE3E /* gengar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E79B2C97FFD50060BE3E /* gengar.mp3 */; };
+		A6D3E8102C97FFD70060BE3E /* golduck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E79D2C97FFD50060BE3E /* golduck.mp3 */; };
+		A6D3E8112C97FFD70060BE3E /* pidgeotto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E79E2C97FFD50060BE3E /* pidgeotto.mp3 */; };
+		A6D3E8122C97FFD70060BE3E /* rattata.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E79F2C97FFD50060BE3E /* rattata.mp3 */; };
+		A6D3E8132C97FFD70060BE3E /* gastly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7A02C97FFD50060BE3E /* gastly.mp3 */; };
+		A6D3E8142C97FFD70060BE3E /* bellsprout .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7A12C97FFD50060BE3E /* bellsprout .mp3 */; };
+		A6D3E8152C97FFD70060BE3E /* oddish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7A22C97FFD50060BE3E /* oddish.mp3 */; };
+		A6D3E8162C97FFD70060BE3E /* dewgong .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7A32C97FFD50060BE3E /* dewgong .mp3 */; };
+		A6D3E8172C97FFD70060BE3E /* haunter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7A42C97FFD50060BE3E /* haunter.mp3 */; };
+		A6D3E8182C97FFD70060BE3E /* butterfree.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7A52C97FFD50060BE3E /* butterfree.mp3 */; };
+		A6D3E81A2C97FFD70060BE3E /* psyduck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7A72C97FFD50060BE3E /* psyduck.mp3 */; };
+		A6D3E81B2C97FFD70060BE3E /* kadabra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7A82C97FFD50060BE3E /* kadabra.mp3 */; };
+		A6D3E81C2C97FFD70060BE3E /* vileplume.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7A92C97FFD50060BE3E /* vileplume.mp3 */; };
+		A6D3E81F2C97FFD70060BE3E /* electrode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7AC2C97FFD50060BE3E /* electrode.mp3 */; };
+		A6D3E8202C97FFD70060BE3E /* drowzee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7AD2C97FFD50060BE3E /* drowzee.mp3 */; };
+		A6D3E8212C97FFD70060BE3E /* dugtrio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7AE2C97FFD50060BE3E /* dugtrio.mp3 */; };
+		A6D3E8222C97FFD70060BE3E /* tentacruel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7AF2C97FFD50060BE3E /* tentacruel.mp3 */; };
+		A6D3E8232C97FFD70060BE3E /* venonat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7B02C97FFD50060BE3E /* venonat.mp3 */; };
+		A6D3E8242C97FFD70060BE3E /* gloom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7B12C97FFD50060BE3E /* gloom.mp3 */; };
+		A6D3E8262C97FFD70060BE3E /* doduo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7B32C97FFD50060BE3E /* doduo.mp3 */; };
+		A6D3E8272C97FFD70060BE3E /* seel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7B42C97FFD50060BE3E /* seel.mp3 */; };
+		A6D3E8282C97FFD70060BE3E /* victreebel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7B52C97FFD50060BE3E /* victreebel.mp3 */; };
+		A6D3E8292C97FFD70060BE3E /* abra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7B62C97FFD50060BE3E /* abra.mp3 */; };
+		A6D3E82A2C97FFD70060BE3E /* pikachu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7B72C97FFD50060BE3E /* pikachu.mp3 */; };
+		A6D3E82B2C97FFD70060BE3E /* fearow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7B82C97FFD60060BE3E /* fearow.mp3 */; };
+		A6D3E82E2C97FFD70060BE3E /* wigglypuff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7BB2C97FFD60060BE3E /* wigglypuff.mp3 */; };
+		A6D3E82F2C97FFD70060BE3E /* slowpoke.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7BC2C97FFD60060BE3E /* slowpoke.mp3 */; };
+		A6D3E8302C97FFD70060BE3E /* venomoth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7BD2C97FFD60060BE3E /* venomoth.mp3 */; };
+		A6D3E8312C97FFD70060BE3E /* kakuna.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7BE2C97FFD60060BE3E /* kakuna.mp3 */; };
+		A6D3E8322C97FFD70060BE3E /* machamp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7BF2C97FFD60060BE3E /* machamp.mp3 */; };
+		A6D3E8332C97FFD70060BE3E /* beedrill.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7C02C97FFD60060BE3E /* beedrill.mp3 */; };
+		A6D3E8342C97FFD70060BE3E /* shellder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7C12C97FFD60060BE3E /* shellder.mp3 */; };
+		A6D3E8352C97FFD70060BE3E /* magnemite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7C22C97FFD60060BE3E /* magnemite.mp3 */; };
+		A6D3E8362C97FFD70060BE3E /* nidorino.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7C32C97FFD60060BE3E /* nidorino.mp3 */; };
+		A6D3E8372C97FFD70060BE3E /* ekans.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7C42C97FFD60060BE3E /* ekans.mp3 */; };
+		A6D3E8382C97FFD70060BE3E /* weedle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7C52C97FFD60060BE3E /* weedle.mp3 */; };
+		A6D3E8392C97FFD70060BE3E /* pidgey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7C62C97FFD60060BE3E /* pidgey.mp3 */; };
+		A6D3E83A2C97FFD70060BE3E /* onix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7C72C97FFD60060BE3E /* onix.mp3 */; };
+		A6D3E83B2C97FFD70060BE3E /* growlithe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7C82C97FFD60060BE3E /* growlithe.mp3 */; };
+		A6D3E83C2C97FFD70060BE3E /* metapod.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7C92C97FFD60060BE3E /* metapod.mp3 */; };
+		A6D3E83D2C97FFD70060BE3E /* nidoran-m.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7CA2C97FFD60060BE3E /* nidoran-m.mp3 */; };
+		A6D3E83E2C97FFD70060BE3E /* cubone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7CB2C97FFD60060BE3E /* cubone.mp3 */; };
+		A6D3E83F2C97FFD70060BE3E /* nidorina.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7CC2C97FFD60060BE3E /* nidorina.mp3 */; };
+		A6D3E8402C97FFD70060BE3E /* nidoking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7CD2C97FFD60060BE3E /* nidoking.mp3 */; };
+		A6D3E8412C97FFD70060BE3E /* mankey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7CE2C97FFD60060BE3E /* mankey.mp3 */; };
+		A6D3E8422C97FFD70060BE3E /* slowbro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7CF2C97FFD60060BE3E /* slowbro.mp3 */; };
+		A6D3E8432C97FFD70060BE3E /* marowak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7D02C97FFD60060BE3E /* marowak.mp3 */; };
+		A6D3E8442C97FFD70060BE3E /* nidoran-f.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7D12C97FFD60060BE3E /* nidoran-f.mp3 */; };
+		A6D3E8452C97FFD70060BE3E /* primeape.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7D22C97FFD60060BE3E /* primeape.mp3 */; };
+		A6D3E8462C97FFD70060BE3E /* golem.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7D32C97FFD60060BE3E /* golem.mp3 */; };
+		A6D3E8472C97FFD70060BE3E /* tentacool.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7D42C97FFD60060BE3E /* tentacool.mp3 */; };
+		A6D3E8482C97FFD70060BE3E /* hitmonchan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7D52C97FFD60060BE3E /* hitmonchan.mp3 */; };
+		A6D3E8492C97FFD70060BE3E /* farfetchd.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7D62C97FFD60060BE3E /* farfetchd.mp3 */; };
+		A6D3E84A2C97FFD70060BE3E /* wigglypuff .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7D72C97FFD60060BE3E /* wigglypuff .mp3 */; };
+		A6D3E84B2C97FFD70060BE3E /* grimer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7D82C97FFD60060BE3E /* grimer.mp3 */; };
+		A6D3E84C2C97FFD70060BE3E /* koffing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7D92C97FFD60060BE3E /* koffing.mp3 */; };
+		A6D3E84E2C97FFD70060BE3E /* pidgeot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7DB2C97FFD70060BE3E /* pidgeot.mp3 */; };
+		A6D3E84F2C97FFD70060BE3E /* raticate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7DC2C97FFD70060BE3E /* raticate.mp3 */; };
+		A6D3E8502C97FFD70060BE3E /* ninetales.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7DD2C97FFD70060BE3E /* ninetales.mp3 */; };
+		A6D3E8512C97FFD70060BE3E /* graveler.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7DE2C97FFD70060BE3E /* graveler.mp3 */; };
+		A6D3E8522C97FFD70060BE3E /* poliwrath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7DF2C97FFD70060BE3E /* poliwrath.mp3 */; };
+		A6D3E8532C97FFD70060BE3E /* dewgong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7E02C97FFD70060BE3E /* dewgong.mp3 */; };
+		A6D3E8542C97FFD70060BE3E /* muk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7E12C97FFD70060BE3E /* muk.mp3 */; };
+		A6D3E8552C97FFD70060BE3E /* paras.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7E22C97FFD70060BE3E /* paras.mp3 */; };
+		A6D3E8562C97FFD70060BE3E /* ponyta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7E32C97FFD70060BE3E /* ponyta.mp3 */; };
+		A6D3E8572C97FFD70060BE3E /* lickitung.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7E42C97FFD70060BE3E /* lickitung.mp3 */; };
+		A6D3E8582C97FFD70060BE3E /* clefairy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7E52C97FFD70060BE3E /* clefairy.mp3 */; };
+		A6D3E8592C97FFD70060BE3E /* arbok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7E62C97FFD70060BE3E /* arbok.mp3 */; };
+		A6D3E85A2C97FFD70060BE3E /* poliwag.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7E72C97FFD70060BE3E /* poliwag.mp3 */; };
+		A6D3E85B2C97FFD70060BE3E /* exeggutor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7E82C97FFD70060BE3E /* exeggutor.mp3 */; };
+		A6D3E85C2C97FFD70060BE3E /* exeggcute.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7E92C97FFD70060BE3E /* exeggcute.mp3 */; };
+		A6D3E85D2C97FFD70060BE3E /* rapidash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7EA2C97FFD70060BE3E /* rapidash.mp3 */; };
+		A6D3E85F2C97FFD70060BE3E /* voltorb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7EC2C97FFD70060BE3E /* voltorb.mp3 */; };
+		A6D3E8602C97FFD70060BE3E /* parasect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7ED2C97FFD70060BE3E /* parasect.mp3 */; };
+		A6D3E8612C97FFD70060BE3E /* cloyster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6D3E7EE2C97FFD70060BE3E /* cloyster.mp3 */; };
+		A6EDC2812C7C747400FC1673 /* GonnaCatchEmAll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6EDC2802C7C747400FC1673 /* GonnaCatchEmAll.mp3 */; };
+		A6F184EB2C9ADCF300F1F8E8 /* alakazam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184EA2C9ADCF300F1F8E8 /* alakazam.mp3 */; };
+		A6F184ED2C9ADD1400F1F8E8 /* charizard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184EC2C9ADD1400F1F8E8 /* charizard.mp3 */; };
+		A6F184EF2C9ADD1F00F1F8E8 /* charmander.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184EE2C9ADD1F00F1F8E8 /* charmander.mp3 */; };
+		A6F184F12C9ADD3300F1F8E8 /* charmeleon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184F02C9ADD3300F1F8E8 /* charmeleon.mp3 */; };
+		A6F185002C9ADD7900F1F8E8 /* eevee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184F22C9ADD7900F1F8E8 /* eevee.mp3 */; };
+		A6F185012C9ADD7900F1F8E8 /* poliwhirl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184F32C9ADD7900F1F8E8 /* poliwhirl.mp3 */; };
+		A6F185022C9ADD7900F1F8E8 /* scyther.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184F42C9ADD7900F1F8E8 /* scyther.mp3 */; };
+		A6F185032C9ADD7900F1F8E8 /* ditto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184F52C9ADD7900F1F8E8 /* ditto.mp3 */; };
+		A6F185042C9ADD7900F1F8E8 /* meowth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184F62C9ADD7900F1F8E8 /* meowth.mp3 */; };
+		A6F185052C9ADD7900F1F8E8 /* jigglypuff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184F72C9ADD7900F1F8E8 /* jigglypuff.mp3 */; };
+		A6F185062C9ADD7900F1F8E8 /* gyarados.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184F82C9ADD7900F1F8E8 /* gyarados.mp3 */; };
+		A6F185072C9ADD7900F1F8E8 /* snorlax.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184F92C9ADD7900F1F8E8 /* snorlax.mp3 */; };
+		A6F185082C9ADD7900F1F8E8 /* mew.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184FA2C9ADD7900F1F8E8 /* mew.mp3 */; };
+		A6F185092C9ADD7900F1F8E8 /* jynx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184FB2C9ADD7900F1F8E8 /* jynx.mp3 */; };
+		A6F1850A2C9ADD7900F1F8E8 /* togepi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184FC2C9ADD7900F1F8E8 /* togepi.mp3 */; };
+		A6F1850B2C9ADD7900F1F8E8 /* ivysaur.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184FD2C9ADD7900F1F8E8 /* ivysaur.mp3 */; };
+		A6F1850C2C9ADD7900F1F8E8 /* venusaur.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184FE2C9ADD7900F1F8E8 /* venusaur.mp3 */; };
+		A6F1850D2C9ADD7900F1F8E8 /* squirtle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F184FF2C9ADD7900F1F8E8 /* squirtle.mp3 */; };
+		A6F1850F2C9ADDE200F1F8E8 /* bulbasaur.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F1850E2C9ADDE100F1F8E8 /* bulbasaur.mp3 */; };
+		A6F185112C9ADE1C00F1F8E8 /* blastoise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6F185102C9ADE1C00F1F8E8 /* blastoise.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A63D8C3D2C75B5B000709B5E /* TypeColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeColorViewModel.swift; sourceTree = "<group>"; };
+		A650FD4C2C746CF2002D3B8C /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
+		A650FD4D2C746CF2002D3B8C /* PokemonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonTableViewCell.xib; sourceTree = "<group>"; };
+		A650FD502C74894C002D3B8C /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
+		A650FD522C748BAE002D3B8C /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		A65559062C73648200AC5515 /* pokemon_list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokemon_list.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A65559092C73648200AC5515 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A655590B2C73648200AC5515 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A655590D2C73648200AC5515 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A65559102C73648200AC5515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A65559122C73648400AC5515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A65559152C73648400AC5515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A65559172C73648400AC5515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67540332C7DE10400E11F52 /* PokemonEvolutionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonEvolutionCollectionViewCell.swift; sourceTree = "<group>"; };
+		A68C2FFB2C771580002E5B6D /* AudioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewModel.swift; sourceTree = "<group>"; };
+		A6979B2B2C993FD700387821 /* PokemonEvolutionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonEvolutionCollectionViewCell.xib; sourceTree = "<group>"; };
+		A6979B302C995CD700387821 /* UIImageView_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView_Extension.swift; sourceTree = "<group>"; };
+		A6A28B202C9AA6760079A484 /* UIImage_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage_Extension.swift; sourceTree = "<group>"; };
+		A6A66F4B2C79DC85001DA9F9 /* PokemonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailsViewController.swift; sourceTree = "<group>"; };
+		A6CBCD132C998B83009B1DBD /* String_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
+		A6D3E77F2C97FFD40060BE3E /* wartortle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wartortle.mp3; sourceTree = "<group>"; };
+		A6D3E7802C97FFD40060BE3E /* machoke.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = machoke.mp3; sourceTree = "<group>"; };
+		A6D3E7812C97FFD40060BE3E /* diglett.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = diglett.mp3; sourceTree = "<group>"; };
+		A6D3E7822C97FFD40060BE3E /* zubat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zubat.mp3; sourceTree = "<group>"; };
+		A6D3E7832C97FFD40060BE3E /* dodrio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dodrio.mp3; sourceTree = "<group>"; };
+		A6D3E7842C97FFD40060BE3E /* hitmonlee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hitmonlee.mp3; sourceTree = "<group>"; };
+		A6D3E7852C97FFD40060BE3E /* caterpie.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = caterpie.mp3; sourceTree = "<group>"; };
+		A6D3E7872C97FFD40060BE3E /* geodude.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = geodude.mp3; sourceTree = "<group>"; };
+		A6D3E7882C97FFD40060BE3E /* arcanine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = arcanine.mp3; sourceTree = "<group>"; };
+		A6D3E7892C97FFD40060BE3E /* vulpix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vulpix.mp3; sourceTree = "<group>"; };
+		A6D3E78A2C97FFD40060BE3E /* sandshrew.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sandshrew.mp3; sourceTree = "<group>"; };
+		A6D3E78B2C97FFD40060BE3E /* raichu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = raichu.mp3; sourceTree = "<group>"; };
+		A6D3E78C2C97FFD40060BE3E /* spearow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spearow.mp3; sourceTree = "<group>"; };
+		A6D3E78D2C97FFD40060BE3E /* kingler.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kingler.mp3; sourceTree = "<group>"; };
+		A6D3E78E2C97FFD40060BE3E /* weepinbell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = weepinbell.mp3; sourceTree = "<group>"; };
+		A6D3E78F2C97FFD40060BE3E /* clefable.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clefable.mp3; sourceTree = "<group>"; };
+		A6D3E7912C97FFD40060BE3E /* sandslash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sandslash.mp3; sourceTree = "<group>"; };
+		A6D3E7922C97FFD40060BE3E /* persian.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = persian.mp3; sourceTree = "<group>"; };
+		A6D3E7932C97FFD40060BE3E /* hypno.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hypno.mp3; sourceTree = "<group>"; };
+		A6D3E7942C97FFD40060BE3E /* machop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = machop.mp3; sourceTree = "<group>"; };
+		A6D3E7952C97FFD40060BE3E /* nidoqueen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nidoqueen.mp3; sourceTree = "<group>"; };
+		A6D3E7962C97FFD50060BE3E /* krabby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = krabby.mp3; sourceTree = "<group>"; };
+		A6D3E7992C97FFD50060BE3E /* golbat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = golbat.mp3; sourceTree = "<group>"; };
+		A6D3E79A2C97FFD50060BE3E /* magneton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = magneton.mp3; sourceTree = "<group>"; };
+		A6D3E79B2C97FFD50060BE3E /* gengar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gengar.mp3; sourceTree = "<group>"; };
+		A6D3E79D2C97FFD50060BE3E /* golduck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = golduck.mp3; sourceTree = "<group>"; };
+		A6D3E79E2C97FFD50060BE3E /* pidgeotto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pidgeotto.mp3; sourceTree = "<group>"; };
+		A6D3E79F2C97FFD50060BE3E /* rattata.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rattata.mp3; sourceTree = "<group>"; };
+		A6D3E7A02C97FFD50060BE3E /* gastly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gastly.mp3; sourceTree = "<group>"; };
+		A6D3E7A12C97FFD50060BE3E /* bellsprout .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bellsprout .mp3"; sourceTree = "<group>"; };
+		A6D3E7A22C97FFD50060BE3E /* oddish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oddish.mp3; sourceTree = "<group>"; };
+		A6D3E7A32C97FFD50060BE3E /* dewgong .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dewgong .mp3"; sourceTree = "<group>"; };
+		A6D3E7A42C97FFD50060BE3E /* haunter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = haunter.mp3; sourceTree = "<group>"; };
+		A6D3E7A52C97FFD50060BE3E /* butterfree.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = butterfree.mp3; sourceTree = "<group>"; };
+		A6D3E7A72C97FFD50060BE3E /* psyduck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = psyduck.mp3; sourceTree = "<group>"; };
+		A6D3E7A82C97FFD50060BE3E /* kadabra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kadabra.mp3; sourceTree = "<group>"; };
+		A6D3E7A92C97FFD50060BE3E /* vileplume.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vileplume.mp3; sourceTree = "<group>"; };
+		A6D3E7AC2C97FFD50060BE3E /* electrode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = electrode.mp3; sourceTree = "<group>"; };
+		A6D3E7AD2C97FFD50060BE3E /* drowzee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drowzee.mp3; sourceTree = "<group>"; };
+		A6D3E7AE2C97FFD50060BE3E /* dugtrio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dugtrio.mp3; sourceTree = "<group>"; };
+		A6D3E7AF2C97FFD50060BE3E /* tentacruel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tentacruel.mp3; sourceTree = "<group>"; };
+		A6D3E7B02C97FFD50060BE3E /* venonat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = venonat.mp3; sourceTree = "<group>"; };
+		A6D3E7B12C97FFD50060BE3E /* gloom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gloom.mp3; sourceTree = "<group>"; };
+		A6D3E7B32C97FFD50060BE3E /* doduo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = doduo.mp3; sourceTree = "<group>"; };
+		A6D3E7B42C97FFD50060BE3E /* seel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = seel.mp3; sourceTree = "<group>"; };
+		A6D3E7B52C97FFD50060BE3E /* victreebel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = victreebel.mp3; sourceTree = "<group>"; };
+		A6D3E7B62C97FFD50060BE3E /* abra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = abra.mp3; sourceTree = "<group>"; };
+		A6D3E7B72C97FFD50060BE3E /* pikachu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pikachu.mp3; sourceTree = "<group>"; };
+		A6D3E7B82C97FFD60060BE3E /* fearow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fearow.mp3; sourceTree = "<group>"; };
+		A6D3E7BB2C97FFD60060BE3E /* wigglypuff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wigglypuff.mp3; sourceTree = "<group>"; };
+		A6D3E7BC2C97FFD60060BE3E /* slowpoke.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slowpoke.mp3; sourceTree = "<group>"; };
+		A6D3E7BD2C97FFD60060BE3E /* venomoth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = venomoth.mp3; sourceTree = "<group>"; };
+		A6D3E7BE2C97FFD60060BE3E /* kakuna.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kakuna.mp3; sourceTree = "<group>"; };
+		A6D3E7BF2C97FFD60060BE3E /* machamp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = machamp.mp3; sourceTree = "<group>"; };
+		A6D3E7C02C97FFD60060BE3E /* beedrill.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beedrill.mp3; sourceTree = "<group>"; };
+		A6D3E7C12C97FFD60060BE3E /* shellder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shellder.mp3; sourceTree = "<group>"; };
+		A6D3E7C22C97FFD60060BE3E /* magnemite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = magnemite.mp3; sourceTree = "<group>"; };
+		A6D3E7C32C97FFD60060BE3E /* nidorino.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nidorino.mp3; sourceTree = "<group>"; };
+		A6D3E7C42C97FFD60060BE3E /* ekans.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ekans.mp3; sourceTree = "<group>"; };
+		A6D3E7C52C97FFD60060BE3E /* weedle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = weedle.mp3; sourceTree = "<group>"; };
+		A6D3E7C62C97FFD60060BE3E /* pidgey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pidgey.mp3; sourceTree = "<group>"; };
+		A6D3E7C72C97FFD60060BE3E /* onix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = onix.mp3; sourceTree = "<group>"; };
+		A6D3E7C82C97FFD60060BE3E /* growlithe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = growlithe.mp3; sourceTree = "<group>"; };
+		A6D3E7C92C97FFD60060BE3E /* metapod.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = metapod.mp3; sourceTree = "<group>"; };
+		A6D3E7CA2C97FFD60060BE3E /* nidoran-m.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "nidoran-m.mp3"; sourceTree = "<group>"; };
+		A6D3E7CB2C97FFD60060BE3E /* cubone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cubone.mp3; sourceTree = "<group>"; };
+		A6D3E7CC2C97FFD60060BE3E /* nidorina.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nidorina.mp3; sourceTree = "<group>"; };
+		A6D3E7CD2C97FFD60060BE3E /* nidoking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nidoking.mp3; sourceTree = "<group>"; };
+		A6D3E7CE2C97FFD60060BE3E /* mankey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mankey.mp3; sourceTree = "<group>"; };
+		A6D3E7CF2C97FFD60060BE3E /* slowbro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slowbro.mp3; sourceTree = "<group>"; };
+		A6D3E7D02C97FFD60060BE3E /* marowak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = marowak.mp3; sourceTree = "<group>"; };
+		A6D3E7D12C97FFD60060BE3E /* nidoran-f.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "nidoran-f.mp3"; sourceTree = "<group>"; };
+		A6D3E7D22C97FFD60060BE3E /* primeape.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = primeape.mp3; sourceTree = "<group>"; };
+		A6D3E7D32C97FFD60060BE3E /* golem.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = golem.mp3; sourceTree = "<group>"; };
+		A6D3E7D42C97FFD60060BE3E /* tentacool.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tentacool.mp3; sourceTree = "<group>"; };
+		A6D3E7D52C97FFD60060BE3E /* hitmonchan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hitmonchan.mp3; sourceTree = "<group>"; };
+		A6D3E7D62C97FFD60060BE3E /* farfetchd.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = farfetchd.mp3; sourceTree = "<group>"; };
+		A6D3E7D72C97FFD60060BE3E /* wigglypuff .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "wigglypuff .mp3"; sourceTree = "<group>"; };
+		A6D3E7D82C97FFD60060BE3E /* grimer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = grimer.mp3; sourceTree = "<group>"; };
+		A6D3E7D92C97FFD60060BE3E /* koffing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = koffing.mp3; sourceTree = "<group>"; };
+		A6D3E7DB2C97FFD70060BE3E /* pidgeot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pidgeot.mp3; sourceTree = "<group>"; };
+		A6D3E7DC2C97FFD70060BE3E /* raticate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = raticate.mp3; sourceTree = "<group>"; };
+		A6D3E7DD2C97FFD70060BE3E /* ninetales.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ninetales.mp3; sourceTree = "<group>"; };
+		A6D3E7DE2C97FFD70060BE3E /* graveler.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = graveler.mp3; sourceTree = "<group>"; };
+		A6D3E7DF2C97FFD70060BE3E /* poliwrath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = poliwrath.mp3; sourceTree = "<group>"; };
+		A6D3E7E02C97FFD70060BE3E /* dewgong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dewgong.mp3; sourceTree = "<group>"; };
+		A6D3E7E12C97FFD70060BE3E /* muk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = muk.mp3; sourceTree = "<group>"; };
+		A6D3E7E22C97FFD70060BE3E /* paras.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = paras.mp3; sourceTree = "<group>"; };
+		A6D3E7E32C97FFD70060BE3E /* ponyta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ponyta.mp3; sourceTree = "<group>"; };
+		A6D3E7E42C97FFD70060BE3E /* lickitung.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lickitung.mp3; sourceTree = "<group>"; };
+		A6D3E7E52C97FFD70060BE3E /* clefairy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clefairy.mp3; sourceTree = "<group>"; };
+		A6D3E7E62C97FFD70060BE3E /* arbok.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = arbok.mp3; sourceTree = "<group>"; };
+		A6D3E7E72C97FFD70060BE3E /* poliwag.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = poliwag.mp3; sourceTree = "<group>"; };
+		A6D3E7E82C97FFD70060BE3E /* exeggutor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exeggutor.mp3; sourceTree = "<group>"; };
+		A6D3E7E92C97FFD70060BE3E /* exeggcute.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exeggcute.mp3; sourceTree = "<group>"; };
+		A6D3E7EA2C97FFD70060BE3E /* rapidash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rapidash.mp3; sourceTree = "<group>"; };
+		A6D3E7EC2C97FFD70060BE3E /* voltorb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voltorb.mp3; sourceTree = "<group>"; };
+		A6D3E7ED2C97FFD70060BE3E /* parasect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = parasect.mp3; sourceTree = "<group>"; };
+		A6D3E7EE2C97FFD70060BE3E /* cloyster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cloyster.mp3; sourceTree = "<group>"; };
+		A6EDC2802C7C747400FC1673 /* GonnaCatchEmAll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GonnaCatchEmAll.mp3; sourceTree = "<group>"; };
+		A6F184EA2C9ADCF300F1F8E8 /* alakazam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alakazam.mp3; path = "pokemon_list/Voice 2/alakazam.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184EC2C9ADD1400F1F8E8 /* charizard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = charizard.mp3; path = "pokemon_list/Voice 2/charizard.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184EE2C9ADD1F00F1F8E8 /* charmander.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = charmander.mp3; path = "pokemon_list/Voice 2/charmander.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184F02C9ADD3300F1F8E8 /* charmeleon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = charmeleon.mp3; path = "pokemon_list/Voice 2/charmeleon.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184F22C9ADD7900F1F8E8 /* eevee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = eevee.mp3; path = "pokemon_list/Voice 2/eevee.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184F32C9ADD7900F1F8E8 /* poliwhirl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = poliwhirl.mp3; path = "pokemon_list/Voice 2/poliwhirl.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184F42C9ADD7900F1F8E8 /* scyther.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = scyther.mp3; path = "pokemon_list/Voice 2/scyther.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184F52C9ADD7900F1F8E8 /* ditto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ditto.mp3; path = "pokemon_list/Voice 2/ditto.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184F62C9ADD7900F1F8E8 /* meowth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = meowth.mp3; path = "pokemon_list/Voice 2/meowth.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184F72C9ADD7900F1F8E8 /* jigglypuff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = jigglypuff.mp3; path = "pokemon_list/Voice 2/jigglypuff.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184F82C9ADD7900F1F8E8 /* gyarados.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gyarados.mp3; path = "pokemon_list/Voice 2/gyarados.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184F92C9ADD7900F1F8E8 /* snorlax.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = snorlax.mp3; path = "pokemon_list/Voice 2/snorlax.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184FA2C9ADD7900F1F8E8 /* mew.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mew.mp3; path = "pokemon_list/Voice 2/mew.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184FB2C9ADD7900F1F8E8 /* jynx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = jynx.mp3; path = "pokemon_list/Voice 2/jynx.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184FC2C9ADD7900F1F8E8 /* togepi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = togepi.mp3; path = "pokemon_list/Voice 2/togepi.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184FD2C9ADD7900F1F8E8 /* ivysaur.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ivysaur.mp3; path = "pokemon_list/Voice 2/ivysaur.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184FE2C9ADD7900F1F8E8 /* venusaur.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = venusaur.mp3; path = "pokemon_list/Voice 2/venusaur.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F184FF2C9ADD7900F1F8E8 /* squirtle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = squirtle.mp3; path = "pokemon_list/Voice 2/squirtle.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F1850E2C9ADDE100F1F8E8 /* bulbasaur.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bulbasaur.mp3; path = "pokemon_list/Voice 2/bulbasaur.mp3"; sourceTree = SOURCE_ROOT; };
+		A6F185102C9ADE1C00F1F8E8 /* blastoise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blastoise.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A65559032C73648200AC5515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A65558FD2C73648200AC5515 = {
+			isa = PBXGroup;
+			children = (
+				A65559082C73648200AC5515 /* pokemon_list */,
+				A65559072C73648200AC5515 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A65559072C73648200AC5515 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A65559062C73648200AC5515 /* pokemon_list.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A65559082C73648200AC5515 /* pokemon_list */ = {
+			isa = PBXGroup;
+			children = (
+				A68C2FFD2C77164C002E5B6D /* Voice */,
+				A65559092C73648200AC5515 /* AppDelegate.swift */,
+				A655590B2C73648200AC5515 /* SceneDelegate.swift */,
+				A65559142C73648400AC5515 /* LaunchScreen.storyboard */,
+				A655590D2C73648200AC5515 /* ViewController.swift */,
+				A655590F2C73648200AC5515 /* Main.storyboard */,
+				A650FD522C748BAE002D3B8C /* Pokemon.swift */,
+				A63D8C3D2C75B5B000709B5E /* TypeColorViewModel.swift */,
+				A68C2FFB2C771580002E5B6D /* AudioViewModel.swift */,
+				A650FD502C74894C002D3B8C /* PokemonViewModel.swift */,
+				A6A66F4B2C79DC85001DA9F9 /* PokemonDetailsViewController.swift */,
+				A650FD4C2C746CF2002D3B8C /* PokemonTableViewCell.swift */,
+				A650FD4D2C746CF2002D3B8C /* PokemonTableViewCell.xib */,
+				A67540332C7DE10400E11F52 /* PokemonEvolutionCollectionViewCell.swift */,
+				A6979B2B2C993FD700387821 /* PokemonEvolutionCollectionViewCell.xib */,
+				A6979B302C995CD700387821 /* UIImageView_Extension.swift */,
+				A6CBCD132C998B83009B1DBD /* String_Extension.swift */,
+				A6A28B202C9AA6760079A484 /* UIImage_Extension.swift */,
+				A65559122C73648400AC5515 /* Assets.xcassets */,
+				A65559172C73648400AC5515 /* Info.plist */,
+			);
+			path = pokemon_list;
+			sourceTree = "<group>";
+		};
+		A68C2FFD2C77164C002E5B6D /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				A6EDC2802C7C747400FC1673 /* GonnaCatchEmAll.mp3 */,
+				A6F184EA2C9ADCF300F1F8E8 /* alakazam.mp3 */,
+				A6D3E7B62C97FFD50060BE3E /* abra.mp3 */,
+				A6D3E7E62C97FFD70060BE3E /* arbok.mp3 */,
+				A6D3E7882C97FFD40060BE3E /* arcanine.mp3 */,
+				A6D3E7C02C97FFD60060BE3E /* beedrill.mp3 */,
+				A6D3E7A12C97FFD50060BE3E /* bellsprout .mp3 */,
+				A6D3E7A52C97FFD50060BE3E /* butterfree.mp3 */,
+				A6F1850E2C9ADDE100F1F8E8 /* bulbasaur.mp3 */,
+				A6F185102C9ADE1C00F1F8E8 /* blastoise.mp3 */,
+				A6D3E7852C97FFD40060BE3E /* caterpie.mp3 */,
+				A6D3E78F2C97FFD40060BE3E /* clefable.mp3 */,
+				A6F184F02C9ADD3300F1F8E8 /* charmeleon.mp3 */,
+				A6D3E7E52C97FFD70060BE3E /* clefairy.mp3 */,
+				A6D3E7EE2C97FFD70060BE3E /* cloyster.mp3 */,
+				A6D3E7CB2C97FFD60060BE3E /* cubone.mp3 */,
+				A6F184EC2C9ADD1400F1F8E8 /* charizard.mp3 */,
+				A6F184EE2C9ADD1F00F1F8E8 /* charmander.mp3 */,
+				A6D3E7A32C97FFD50060BE3E /* dewgong .mp3 */,
+				A6D3E7E02C97FFD70060BE3E /* dewgong.mp3 */,
+				A6D3E7812C97FFD40060BE3E /* diglett.mp3 */,
+				A6D3E7832C97FFD40060BE3E /* dodrio.mp3 */,
+				A6D3E7B32C97FFD50060BE3E /* doduo.mp3 */,
+				A6D3E7AD2C97FFD50060BE3E /* drowzee.mp3 */,
+				A6D3E7AE2C97FFD50060BE3E /* dugtrio.mp3 */,
+				A6D3E7C42C97FFD60060BE3E /* ekans.mp3 */,
+				A6D3E7AC2C97FFD50060BE3E /* electrode.mp3 */,
+				A6D3E7E92C97FFD70060BE3E /* exeggcute.mp3 */,
+				A6D3E7E82C97FFD70060BE3E /* exeggutor.mp3 */,
+				A6D3E7D62C97FFD60060BE3E /* farfetchd.mp3 */,
+				A6D3E7B82C97FFD60060BE3E /* fearow.mp3 */,
+				A6D3E7A02C97FFD50060BE3E /* gastly.mp3 */,
+				A6D3E79B2C97FFD50060BE3E /* gengar.mp3 */,
+				A6D3E7872C97FFD40060BE3E /* geodude.mp3 */,
+				A6D3E7B12C97FFD50060BE3E /* gloom.mp3 */,
+				A6D3E7992C97FFD50060BE3E /* golbat.mp3 */,
+				A6D3E79D2C97FFD50060BE3E /* golduck.mp3 */,
+				A6D3E7D32C97FFD60060BE3E /* golem.mp3 */,
+				A6D3E7DE2C97FFD70060BE3E /* graveler.mp3 */,
+				A6D3E7D82C97FFD60060BE3E /* grimer.mp3 */,
+				A6D3E7C82C97FFD60060BE3E /* growlithe.mp3 */,
+				A6D3E7A42C97FFD50060BE3E /* haunter.mp3 */,
+				A6D3E7D52C97FFD60060BE3E /* hitmonchan.mp3 */,
+				A6D3E7842C97FFD40060BE3E /* hitmonlee.mp3 */,
+				A6D3E7932C97FFD40060BE3E /* hypno.mp3 */,
+				A6D3E7A82C97FFD50060BE3E /* kadabra.mp3 */,
+				A6F184F52C9ADD7900F1F8E8 /* ditto.mp3 */,
+				A6F184F22C9ADD7900F1F8E8 /* eevee.mp3 */,
+				A6F184F82C9ADD7900F1F8E8 /* gyarados.mp3 */,
+				A6F184FD2C9ADD7900F1F8E8 /* ivysaur.mp3 */,
+				A6F184F72C9ADD7900F1F8E8 /* jigglypuff.mp3 */,
+				A6F184FB2C9ADD7900F1F8E8 /* jynx.mp3 */,
+				A6F184F62C9ADD7900F1F8E8 /* meowth.mp3 */,
+				A6F184FA2C9ADD7900F1F8E8 /* mew.mp3 */,
+				A6F184F32C9ADD7900F1F8E8 /* poliwhirl.mp3 */,
+				A6F184F42C9ADD7900F1F8E8 /* scyther.mp3 */,
+				A6F184F92C9ADD7900F1F8E8 /* snorlax.mp3 */,
+				A6F184FF2C9ADD7900F1F8E8 /* squirtle.mp3 */,
+				A6F184FC2C9ADD7900F1F8E8 /* togepi.mp3 */,
+				A6F184FE2C9ADD7900F1F8E8 /* venusaur.mp3 */,
+				A6D3E7BE2C97FFD60060BE3E /* kakuna.mp3 */,
+				A6D3E78D2C97FFD40060BE3E /* kingler.mp3 */,
+				A6D3E7D92C97FFD60060BE3E /* koffing.mp3 */,
+				A6D3E7962C97FFD50060BE3E /* krabby.mp3 */,
+				A6D3E7E42C97FFD70060BE3E /* lickitung.mp3 */,
+				A6D3E7BF2C97FFD60060BE3E /* machamp.mp3 */,
+				A6D3E7802C97FFD40060BE3E /* machoke.mp3 */,
+				A6D3E7942C97FFD40060BE3E /* machop.mp3 */,
+				A6D3E7C22C97FFD60060BE3E /* magnemite.mp3 */,
+				A6D3E79A2C97FFD50060BE3E /* magneton.mp3 */,
+				A6D3E7CE2C97FFD60060BE3E /* mankey.mp3 */,
+				A6D3E7D02C97FFD60060BE3E /* marowak.mp3 */,
+				A6D3E7C92C97FFD60060BE3E /* metapod.mp3 */,
+				A6D3E7E12C97FFD70060BE3E /* muk.mp3 */,
+				A6D3E7CD2C97FFD60060BE3E /* nidoking.mp3 */,
+				A6D3E7952C97FFD40060BE3E /* nidoqueen.mp3 */,
+				A6D3E7D12C97FFD60060BE3E /* nidoran-f.mp3 */,
+				A6D3E7CA2C97FFD60060BE3E /* nidoran-m.mp3 */,
+				A6D3E7CC2C97FFD60060BE3E /* nidorina.mp3 */,
+				A6D3E7C32C97FFD60060BE3E /* nidorino.mp3 */,
+				A6D3E7DD2C97FFD70060BE3E /* ninetales.mp3 */,
+				A6D3E7A22C97FFD50060BE3E /* oddish.mp3 */,
+				A6D3E7C72C97FFD60060BE3E /* onix.mp3 */,
+				A6D3E7E22C97FFD70060BE3E /* paras.mp3 */,
+				A6D3E7ED2C97FFD70060BE3E /* parasect.mp3 */,
+				A6D3E7922C97FFD40060BE3E /* persian.mp3 */,
+				A6D3E7DB2C97FFD70060BE3E /* pidgeot.mp3 */,
+				A6D3E79E2C97FFD50060BE3E /* pidgeotto.mp3 */,
+				A6D3E7C62C97FFD60060BE3E /* pidgey.mp3 */,
+				A6D3E7B72C97FFD50060BE3E /* pikachu.mp3 */,
+				A6D3E7E72C97FFD70060BE3E /* poliwag.mp3 */,
+				A6D3E7DF2C97FFD70060BE3E /* poliwrath.mp3 */,
+				A6D3E7E32C97FFD70060BE3E /* ponyta.mp3 */,
+				A6D3E7D22C97FFD60060BE3E /* primeape.mp3 */,
+				A6D3E7A72C97FFD50060BE3E /* psyduck.mp3 */,
+				A6D3E78B2C97FFD40060BE3E /* raichu.mp3 */,
+				A6D3E7EA2C97FFD70060BE3E /* rapidash.mp3 */,
+				A6D3E7DC2C97FFD70060BE3E /* raticate.mp3 */,
+				A6D3E79F2C97FFD50060BE3E /* rattata.mp3 */,
+				A6D3E78A2C97FFD40060BE3E /* sandshrew.mp3 */,
+				A6D3E7912C97FFD40060BE3E /* sandslash.mp3 */,
+				A6D3E7B42C97FFD50060BE3E /* seel.mp3 */,
+				A6D3E7C12C97FFD60060BE3E /* shellder.mp3 */,
+				A6D3E7CF2C97FFD60060BE3E /* slowbro.mp3 */,
+				A6D3E7BC2C97FFD60060BE3E /* slowpoke.mp3 */,
+				A6D3E78C2C97FFD40060BE3E /* spearow.mp3 */,
+				A6D3E7D42C97FFD60060BE3E /* tentacool.mp3 */,
+				A6D3E7AF2C97FFD50060BE3E /* tentacruel.mp3 */,
+				A6D3E7BD2C97FFD60060BE3E /* venomoth.mp3 */,
+				A6D3E7B02C97FFD50060BE3E /* venonat.mp3 */,
+				A6D3E7B52C97FFD50060BE3E /* victreebel.mp3 */,
+				A6D3E7A92C97FFD50060BE3E /* vileplume.mp3 */,
+				A6D3E7EC2C97FFD70060BE3E /* voltorb.mp3 */,
+				A6D3E7892C97FFD40060BE3E /* vulpix.mp3 */,
+				A6D3E77F2C97FFD40060BE3E /* wartortle.mp3 */,
+				A6D3E7C52C97FFD60060BE3E /* weedle.mp3 */,
+				A6D3E78E2C97FFD40060BE3E /* weepinbell.mp3 */,
+				A6D3E7D72C97FFD60060BE3E /* wigglypuff .mp3 */,
+				A6D3E7BB2C97FFD60060BE3E /* wigglypuff.mp3 */,
+				A6D3E7822C97FFD40060BE3E /* zubat.mp3 */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A65559052C73648200AC5515 /* pokemon_list */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A655591A2C73648400AC5515 /* Build configuration list for PBXNativeTarget "pokemon_list" */;
+			buildPhases = (
+				A65559022C73648200AC5515 /* Sources */,
+				A65559032C73648200AC5515 /* Frameworks */,
+				A65559042C73648200AC5515 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pokemon_list;
+			productName = pokemon_list;
+			productReference = A65559062C73648200AC5515 /* pokemon_list.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A65558FE2C73648200AC5515 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A65559052C73648200AC5515 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = A65559012C73648200AC5515 /* Build configuration list for PBXProject "pokemon_list" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A65558FD2C73648200AC5515;
+			productRefGroup = A65559072C73648200AC5515 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A65559052C73648200AC5515 /* pokemon_list */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A65559042C73648200AC5515 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D3E8242C97FFD70060BE3E /* gloom.mp3 in Resources */,
+				A6D3E8112C97FFD70060BE3E /* pidgeotto.mp3 in Resources */,
+				A6D3E7FD2C97FFD70060BE3E /* sandshrew.mp3 in Resources */,
+				A6D3E8342C97FFD70060BE3E /* shellder.mp3 in Resources */,
+				A6D3E85F2C97FFD70060BE3E /* voltorb.mp3 in Resources */,
+				A6D3E85B2C97FFD70060BE3E /* exeggutor.mp3 in Resources */,
+				A6D3E8062C97FFD70060BE3E /* hypno.mp3 in Resources */,
+				A6D3E8202C97FFD70060BE3E /* drowzee.mp3 in Resources */,
+				A6F185062C9ADD7900F1F8E8 /* gyarados.mp3 in Resources */,
+				A6D3E8232C97FFD70060BE3E /* venonat.mp3 in Resources */,
+				A6D3E8552C97FFD70060BE3E /* paras.mp3 in Resources */,
+				A6D3E8392C97FFD70060BE3E /* pidgey.mp3 in Resources */,
+				A6D3E8362C97FFD70060BE3E /* nidorino.mp3 in Resources */,
+				A6D3E8222C97FFD70060BE3E /* tentacruel.mp3 in Resources */,
+				A6D3E8322C97FFD70060BE3E /* machamp.mp3 in Resources */,
+				A6D3E8012C97FFD70060BE3E /* weepinbell.mp3 in Resources */,
+				A6D3E84F2C97FFD70060BE3E /* raticate.mp3 in Resources */,
+				A6D3E8612C97FFD70060BE3E /* cloyster.mp3 in Resources */,
+				A6D3E84B2C97FFD70060BE3E /* grimer.mp3 in Resources */,
+				A6979B2D2C993FD700387821 /* PokemonEvolutionCollectionViewCell.xib in Resources */,
+				A6D3E80D2C97FFD70060BE3E /* magneton.mp3 in Resources */,
+				A6D3E8272C97FFD70060BE3E /* seel.mp3 in Resources */,
+				A6D3E83C2C97FFD70060BE3E /* metapod.mp3 in Resources */,
+				A6D3E85D2C97FFD70060BE3E /* rapidash.mp3 in Resources */,
+				A6F184F12C9ADD3300F1F8E8 /* charmeleon.mp3 in Resources */,
+				A6D3E83D2C97FFD70060BE3E /* nidoran-m.mp3 in Resources */,
+				A6D3E83B2C97FFD70060BE3E /* growlithe.mp3 in Resources */,
+				A6F185052C9ADD7900F1F8E8 /* jigglypuff.mp3 in Resources */,
+				A6F1850F2C9ADDE200F1F8E8 /* bulbasaur.mp3 in Resources */,
+				A6D3E82B2C97FFD70060BE3E /* fearow.mp3 in Resources */,
+				A6D3E84A2C97FFD70060BE3E /* wigglypuff .mp3 in Resources */,
+				A6EDC2812C7C747400FC1673 /* GonnaCatchEmAll.mp3 in Resources */,
+				A6D3E8422C97FFD70060BE3E /* slowbro.mp3 in Resources */,
+				A6D3E8072C97FFD70060BE3E /* machop.mp3 in Resources */,
+				A6D3E7F32C97FFD70060BE3E /* machoke.mp3 in Resources */,
+				A6F185082C9ADD7900F1F8E8 /* mew.mp3 in Resources */,
+				A6D3E8572C97FFD70060BE3E /* lickitung.mp3 in Resources */,
+				A6D3E83A2C97FFD70060BE3E /* onix.mp3 in Resources */,
+				A6D3E8162C97FFD70060BE3E /* dewgong .mp3 in Resources */,
+				A6D3E8452C97FFD70060BE3E /* primeape.mp3 in Resources */,
+				A6D3E8512C97FFD70060BE3E /* graveler.mp3 in Resources */,
+				A6D3E83F2C97FFD70060BE3E /* nidorina.mp3 in Resources */,
+				A6D3E7FA2C97FFD70060BE3E /* geodude.mp3 in Resources */,
+				A6D3E8462C97FFD70060BE3E /* golem.mp3 in Resources */,
+				A6D3E8382C97FFD70060BE3E /* weedle.mp3 in Resources */,
+				A6D3E8132C97FFD70060BE3E /* gastly.mp3 in Resources */,
+				A65559132C73648400AC5515 /* Assets.xcassets in Resources */,
+				A6F185072C9ADD7900F1F8E8 /* snorlax.mp3 in Resources */,
+				A6D3E80E2C97FFD70060BE3E /* gengar.mp3 in Resources */,
+				A6D3E81C2C97FFD70060BE3E /* vileplume.mp3 in Resources */,
+				A6D3E8432C97FFD70060BE3E /* marowak.mp3 in Resources */,
+				A650FD4F2C746CF2002D3B8C /* PokemonTableViewCell.xib in Resources */,
+				A6F185002C9ADD7900F1F8E8 /* eevee.mp3 in Resources */,
+				A6D3E8492C97FFD70060BE3E /* farfetchd.mp3 in Resources */,
+				A6D3E8602C97FFD70060BE3E /* parasect.mp3 in Resources */,
+				A6D3E84E2C97FFD70060BE3E /* pidgeot.mp3 in Resources */,
+				A6D3E82F2C97FFD70060BE3E /* slowpoke.mp3 in Resources */,
+				A6D3E7FF2C97FFD70060BE3E /* spearow.mp3 in Resources */,
+				A6D3E7F82C97FFD70060BE3E /* caterpie.mp3 in Resources */,
+				A6D3E7F52C97FFD70060BE3E /* zubat.mp3 in Resources */,
+				A6D3E8142C97FFD70060BE3E /* bellsprout .mp3 in Resources */,
+				A6D3E8022C97FFD70060BE3E /* clefable.mp3 in Resources */,
+				A6D3E8302C97FFD70060BE3E /* venomoth.mp3 in Resources */,
+				A6D3E8472C97FFD70060BE3E /* tentacool.mp3 in Resources */,
+				A6D3E85C2C97FFD70060BE3E /* exeggcute.mp3 in Resources */,
+				A6D3E8292C97FFD70060BE3E /* abra.mp3 in Resources */,
+				A6D3E8352C97FFD70060BE3E /* magnemite.mp3 in Resources */,
+				A6F185012C9ADD7900F1F8E8 /* poliwhirl.mp3 in Resources */,
+				A6D3E8592C97FFD70060BE3E /* arbok.mp3 in Resources */,
+				A6D3E8562C97FFD70060BE3E /* ponyta.mp3 in Resources */,
+				A6F184EB2C9ADCF300F1F8E8 /* alakazam.mp3 in Resources */,
+				A6D3E8172C97FFD70060BE3E /* haunter.mp3 in Resources */,
+				A6F185092C9ADD7900F1F8E8 /* jynx.mp3 in Resources */,
+				A6D3E8402C97FFD70060BE3E /* nidoking.mp3 in Resources */,
+				A6D3E7FE2C97FFD70060BE3E /* raichu.mp3 in Resources */,
+				A6D3E82E2C97FFD70060BE3E /* wigglypuff.mp3 in Resources */,
+				A6F184ED2C9ADD1400F1F8E8 /* charizard.mp3 in Resources */,
+				A6D3E8582C97FFD70060BE3E /* clefairy.mp3 in Resources */,
+				A6D3E8002C97FFD70060BE3E /* kingler.mp3 in Resources */,
+				A6D3E81F2C97FFD70060BE3E /* electrode.mp3 in Resources */,
+				A6D3E84C2C97FFD70060BE3E /* koffing.mp3 in Resources */,
+				A6F1850A2C9ADD7900F1F8E8 /* togepi.mp3 in Resources */,
+				A6F185022C9ADD7900F1F8E8 /* scyther.mp3 in Resources */,
+				A65559162C73648400AC5515 /* Base in Resources */,
+				A6F1850D2C9ADD7900F1F8E8 /* squirtle.mp3 in Resources */,
+				A6D3E7F22C97FFD70060BE3E /* wartortle.mp3 in Resources */,
+				A6D3E8542C97FFD70060BE3E /* muk.mp3 in Resources */,
+				A6D3E83E2C97FFD70060BE3E /* cubone.mp3 in Resources */,
+				A6D3E8152C97FFD70060BE3E /* oddish.mp3 in Resources */,
+				A6D3E8092C97FFD70060BE3E /* krabby.mp3 in Resources */,
+				A6D3E8312C97FFD70060BE3E /* kakuna.mp3 in Resources */,
+				A6F185112C9ADE1C00F1F8E8 /* blastoise.mp3 in Resources */,
+				A6D3E81B2C97FFD70060BE3E /* kadabra.mp3 in Resources */,
+				A6D3E8522C97FFD70060BE3E /* poliwrath.mp3 in Resources */,
+				A6D3E8532C97FFD70060BE3E /* dewgong.mp3 in Resources */,
+				A6D3E81A2C97FFD70060BE3E /* psyduck.mp3 in Resources */,
+				A6F1850C2C9ADD7900F1F8E8 /* venusaur.mp3 in Resources */,
+				A6D3E8052C97FFD70060BE3E /* persian.mp3 in Resources */,
+				A6D3E8122C97FFD70060BE3E /* rattata.mp3 in Resources */,
+				A6F184EF2C9ADD1F00F1F8E8 /* charmander.mp3 in Resources */,
+				A6D3E8282C97FFD70060BE3E /* victreebel.mp3 in Resources */,
+				A6D3E8412C97FFD70060BE3E /* mankey.mp3 in Resources */,
+				A6D3E80C2C97FFD70060BE3E /* golbat.mp3 in Resources */,
+				A6D3E7FC2C97FFD70060BE3E /* vulpix.mp3 in Resources */,
+				A6D3E7F72C97FFD70060BE3E /* hitmonlee.mp3 in Resources */,
+				A6D3E8502C97FFD70060BE3E /* ninetales.mp3 in Resources */,
+				A6D3E8372C97FFD70060BE3E /* ekans.mp3 in Resources */,
+				A6D3E7FB2C97FFD70060BE3E /* arcanine.mp3 in Resources */,
+				A6F185032C9ADD7900F1F8E8 /* ditto.mp3 in Resources */,
+				A65559112C73648200AC5515 /* Base in Resources */,
+				A6D3E8182C97FFD70060BE3E /* butterfree.mp3 in Resources */,
+				A6D3E8262C97FFD70060BE3E /* doduo.mp3 in Resources */,
+				A6F185042C9ADD7900F1F8E8 /* meowth.mp3 in Resources */,
+				A6D3E7F42C97FFD70060BE3E /* diglett.mp3 in Resources */,
+				A6D3E7F62C97FFD70060BE3E /* dodrio.mp3 in Resources */,
+				A6F1850B2C9ADD7900F1F8E8 /* ivysaur.mp3 in Resources */,
+				A6D3E8482C97FFD70060BE3E /* hitmonchan.mp3 in Resources */,
+				A6D3E8042C97FFD70060BE3E /* sandslash.mp3 in Resources */,
+				A6D3E8442C97FFD70060BE3E /* nidoran-f.mp3 in Resources */,
+				A6D3E82A2C97FFD70060BE3E /* pikachu.mp3 in Resources */,
+				A6D3E85A2C97FFD70060BE3E /* poliwag.mp3 in Resources */,
+				A6D3E8082C97FFD70060BE3E /* nidoqueen.mp3 in Resources */,
+				A6D3E8332C97FFD70060BE3E /* beedrill.mp3 in Resources */,
+				A6D3E8102C97FFD70060BE3E /* golduck.mp3 in Resources */,
+				A6D3E8212C97FFD70060BE3E /* dugtrio.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A65559022C73648200AC5515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A63D8C3E2C75B5B000709B5E /* TypeColorViewModel.swift in Sources */,
+				A655590E2C73648200AC5515 /* ViewController.swift in Sources */,
+				A650FD512C74894C002D3B8C /* PokemonViewModel.swift in Sources */,
+				A655590A2C73648200AC5515 /* AppDelegate.swift in Sources */,
+				A6CBCD142C998B83009B1DBD /* String_Extension.swift in Sources */,
+				A650FD4E2C746CF2002D3B8C /* PokemonTableViewCell.swift in Sources */,
+				A67540342C7DE10400E11F52 /* PokemonEvolutionCollectionViewCell.swift in Sources */,
+				A68C2FFC2C771580002E5B6D /* AudioViewModel.swift in Sources */,
+				A655590C2C73648200AC5515 /* SceneDelegate.swift in Sources */,
+				A6A28B212C9AA6760079A484 /* UIImage_Extension.swift in Sources */,
+				A650FD532C748BAE002D3B8C /* Pokemon.swift in Sources */,
+				A6A66F4C2C79DC85001DA9F9 /* PokemonDetailsViewController.swift in Sources */,
+				A6979B312C995CD700387821 /* UIImageView_Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A655590F2C73648200AC5515 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A65559102C73648200AC5515 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A65559142C73648400AC5515 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A65559152C73648400AC5515 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A65559182C73648400AC5515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A65559192C73648400AC5515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A655591B2C73648400AC5515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XAP33Q8Y5W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pokemon_list/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pokedex;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pccenter.pokemon-list";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A655591C2C73648400AC5515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XAP33Q8Y5W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pokemon_list/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pokedex;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pccenter.pokemon-list";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A65559012C73648200AC5515 /* Build configuration list for PBXProject "pokemon_list" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A65559182C73648400AC5515 /* Debug */,
+				A65559192C73648400AC5515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A655591A2C73648400AC5515 /* Build configuration list for PBXNativeTarget "pokemon_list" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A655591B2C73648400AC5515 /* Debug */,
+				A655591C2C73648400AC5515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A65558FE2C73648200AC5515 /* Project object */;
+}

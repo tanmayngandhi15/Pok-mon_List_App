@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EvolutionCollectionViewController" customModule="pokemon_list" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pokeEvolution" id="Vfs-kx-J6m" customClass="PokemonEvolutionCollectionViewCell" customModule="pokemon_list" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="182" height="206"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="NeB-9c-6Jb">
+                <rect key="frame" x="0.0" y="0.0" width="182" height="206"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KkB-qk-Spo">
+                        <rect key="frame" x="5" y="10" width="160" height="186"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFp-Ji-PqR">
+                                <rect key="frame" x="5" y="5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="4hh-jS-Ei8"/>
+                                    <constraint firstAttribute="height" constant="150" id="YbB-3A-Cn3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2a-36-jx2">
+                                <rect key="frame" x="0.0" y="152" width="160" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="enD-2I-a2g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="m2a-36-jx2" secondAttribute="bottom" constant="3" id="2Kb-jb-cj9"/>
+                            <constraint firstAttribute="trailing" secondItem="m2a-36-jx2" secondAttribute="trailing" id="T1x-EC-oJl"/>
+                            <constraint firstItem="m2a-36-jx2" firstAttribute="leading" secondItem="KkB-qk-Spo" secondAttribute="leading" id="WVK-kW-SYl"/>
+                            <constraint firstAttribute="trailing" secondItem="tFp-Ji-PqR" secondAttribute="trailing" constant="5" id="YG3-03-tAD"/>
+                            <constraint firstItem="tFp-Ji-PqR" firstAttribute="leading" secondItem="KkB-qk-Spo" secondAttribute="leading" constant="5" id="ayn-OR-Mf0"/>
+                            <constraint firstItem="tFp-Ji-PqR" firstAttribute="top" secondItem="KkB-qk-Spo" secondAttribute="top" constant="5" id="eNK-iw-zrd"/>
+                            <constraint firstItem="m2a-36-jx2" firstAttribute="top" secondItem="tFp-Ji-PqR" secondAttribute="bottom" constant="-3" id="qC8-kP-XKf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="KkB-qk-Spo" secondAttribute="trailing" constant="5" id="23R-ml-cVj"/>
+                    <constraint firstAttribute="bottom" secondItem="KkB-qk-Spo" secondAttribute="bottom" id="3KI-uc-EMY"/>
+                    <constraint firstItem="KkB-qk-Spo" firstAttribute="top" secondItem="NeB-9c-6Jb" secondAttribute="top" constant="5" id="B99-lj-zkq"/>
+                    <constraint firstItem="KkB-qk-Spo" firstAttribute="leading" secondItem="NeB-9c-6Jb" secondAttribute="leading" constant="5" id="VBa-AR-XB5"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="182" height="206"/>
+            <connections>
+                <outlet property="iv_pokemon" destination="tFp-Ji-PqR" id="plh-Po-hFs"/>
+                <outlet property="lbl_pokemonName" destination="m2a-36-jx2" id="8u0-5X-XLq"/>
+                <outlet property="vw_cellBg" destination="KkB-qk-Spo" id="Jam-fF-xb9"/>
+            </connections>
+            <point key="canvasLocation" x="-296.18320610687022" y="-423.23943661971833"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
