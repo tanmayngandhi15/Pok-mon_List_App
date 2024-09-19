@@ -34,7 +34,7 @@ class PokemonDetailsViewController: UIViewController {
         
         btn_back.layer.cornerRadius = btn_back.bounds.height / 2
         
-        iv_pokeImage.image = .remove
+        iv_pokeImage.image = UIImage(named: "pokeball")
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         iv_pokeImage.addGestureRecognizer(tapGesture)

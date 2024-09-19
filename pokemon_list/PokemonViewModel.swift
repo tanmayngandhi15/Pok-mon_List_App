@@ -83,6 +83,16 @@ class PokemonViewModel {
         task.resume()
     }
     
+    // Function to find Pokémon Position in Array based on PokemonID
+            func searchPokemon(with id: Int) -> Int? {
+                for i in 0 ..< arrPokemon.count {
+                    if arrPokemon[i].id == id {
+                        return i
+                    }
+                }
+                return nil
+            }
+    
     // Function to filter Pokémon based on the search query
     func searchPokemon(with query: String) {
         if query.isEmpty {
