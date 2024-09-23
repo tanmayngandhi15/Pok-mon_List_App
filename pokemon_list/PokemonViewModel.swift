@@ -15,6 +15,7 @@ class PokemonViewModel {
     
     var arrPokemon :[Pokemon] = [] {
         didSet{
+            urlPokemonImage()
             filteredPokemon = arrPokemon
         }
     }
@@ -82,6 +83,35 @@ class PokemonViewModel {
         }
         task.resume()
     }
+    
+    // Function to URL Pokemon Inage to Cache Storage
+        func urlPokemonImage() {
+            DispatchQueue.global(qos: .background).async { [weak self] in
+                guard let self = self else { return }
+                
+                for pokemon in self.arrPokemon {
+                    guard let pokemonId = pokemon.id else { continue }
+                    let pokemonIdNumber = NSNumber(value: pokemonId)
+                    
+                    // Check if image is already cached
+                    if self.dictPokemon.object(forKey: pokemonIdNumber) == nil {
+                        if let imageUrl = pokemon.imageUrl {
+                            imageUrl.loadImage { [weak self] image in
+                                guard let self = self else { return }
+                                
+                                if let image = image {
+                                    // Cache the image for future use
+                                    self.dictPokemon.setObject(image, forKey: pokemonIdNumber)
+                                } else {
+                                    // Handle the case where the image could not be loaded
+                                    print("Failed to load image for Pokémon with ID \(pokemonId)")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     
     // Function to find Pokémon Position in Array based on PokemonID
             func searchPokemon(with id: Int) -> Int? {
